@@ -41,7 +41,7 @@ class StreamingCommunity : MainAPI() {
     override var lang = "it"
     override val hasMainPage = true
 
-    companion object {
+companion object {
         private var inertiaVersion = ""
         private val headers = mapOf(
             "Cookie" to "",
@@ -49,11 +49,10 @@ class StreamingCommunity : MainAPI() {
             "X-Inertia-Version" to inertiaVersion,
             "X-Requested-With" to "XMLHttpRequest",
         ).toMutableMap()
-        val mainUrl = "https://streamingunity.co/it"
+        val mainUrl = "https://streamingcommunityz.institute"
         var name = "StreamingCommunity"
         val TAG = "SCommunity"
     }
-
     private val sectionNamesList = mainPageOf(
         "$mainUrl/browse/top10" to "Top 10 di oggi",
         "$mainUrl/browse/trending" to "I Titoli Del Momento",
